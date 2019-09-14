@@ -1,4 +1,4 @@
-package _01_houses;
+package _09_sound_effects_machine;
 
 import java.applet.AudioClip;
 import java.awt.event.ActionEvent;

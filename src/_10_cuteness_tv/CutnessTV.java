@@ -1,4 +1,4 @@
-package _01_houses;
+package _10_cuteness_tv;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

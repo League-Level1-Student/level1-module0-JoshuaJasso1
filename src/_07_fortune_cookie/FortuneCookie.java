@@ -1,4 +1,4 @@
-package _01_houses;
+package _07_fortune_cookie;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

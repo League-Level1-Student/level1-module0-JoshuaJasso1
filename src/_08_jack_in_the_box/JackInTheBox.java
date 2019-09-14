@@ -1,4 +1,4 @@
-package _01_houses;
+package _08_jack_in_the_box;
 
 import java.applet.AudioClip;
 import java.awt.event.ActionEvent;
