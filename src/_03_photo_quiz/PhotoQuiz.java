@@ -21,40 +21,33 @@ public class PhotoQuiz {
 		JFrame frame = new JFrame();
 		frame.setVisible(true);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		String image = ("https://fr9284fb2if174w8g40vzal5-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/antelope_canyon_sky-1200x480.jpg");
+		String image = ("https://i.pinimg.com/originals/48/af/c0/48afc07443f7d17309de222cf577f0d7.jpg");
 
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
 
 		// 2. create a variable of type "Component" that will hold your image
-
+		Component josh;
 		// 3. use the "createImage()" method below to initialize your Component
-
+		josh = createImage(image);
 		// 4. add the image to the quiz window
-
+		frame.add(createImage(image));
 		// 5. call the pack() method on the quiz window
-
+		frame.pack();
 		// 6. ask a question that relates to the image
-
+		String answer = JOptionPane.showInputDialog("What number is the image?(answer in number form)");
 		// 7. print "CORRECT" if the user gave the right answer
-
+		int answers = Integer.parseInt(answer);
+		if (answers == 6) {
+			JOptionPane.showMessageDialog(null, "CORRECT!!!");
+		}
 		// 8. print "INCORRECT" if the answer is wrong
-
-		// 9. remove the component from the quiz window (you may not see the
-		// effect of this until step 12)
-
-		// 10. find another image and create it (might take more than one line
-		// of code)
-
-		// 11. add the second image to the quiz window
-
-		// 12. pack the quiz window
-
-		// 13. ask another question
-
-		// 14+ check answer, say if correct or incorrect, etc.
-
+		else {
+			JOptionPane.showMessageDialog(null, "INCORRECT!!!");
+		}
+		// 9. remove the component from the quiz window
+		frame.remove(josh);
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
